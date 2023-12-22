@@ -1,0 +1,12 @@
+replicaCount: 3
+
+image:
+  repository: https://prodtech.jfrog.io/artifactory/zira-docker/
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+
+namespace: myapp-namespace
